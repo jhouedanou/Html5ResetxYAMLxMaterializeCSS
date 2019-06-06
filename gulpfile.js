@@ -124,14 +124,14 @@ gulp.task('browser-sync', function() {
 
     ];
     browserSync.init(files, {
-        // server: {
-        //     baseDir: "./",
-        //     index: "index.html",
-        //     directory: true
-        //  },
-        online:true,
-       proxy: "127.0.0.1/wordpress/",
-        notify: true
+        server: {
+            baseDir: "./",
+            index: "index.html",
+            directory: true
+         },
+       //  online:true,
+       // proxy: "127.0.0.1/wordpress/",
+       //  notify: true
     });
 });
 gulp.task('watch', function() {
